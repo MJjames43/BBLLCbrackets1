@@ -1,0 +1,17 @@
+{
+  "name": "Brackets",
+  "description": "Code The Web",
+  "version": "27.0.1.1",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "alarms",
+    "experimental"
+  ],    
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "bracketsicon-16.png", "128": "bracketsicon-128.png" }
+}
