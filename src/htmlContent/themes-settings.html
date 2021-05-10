@@ -1,0 +1,50 @@
+<div class="theme-settings modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">{{Strings.THEMES_SETTINGS}}</h1>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="themes-theme-dropdown">{{Strings.CURRENT_THEME}}:</label>
+                <div class="controls">
+                    <select id="themes-theme-dropdown">
+                        {{#themes}}
+                        <option style="text-align:left;" value="{{name}}" data-target="theme">{{displayName}}</option>
+                        {{/themes}}
+                    </select>
+                    <p class="note-below-controls">{{Strings.GET_MORE_THEMES}}</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="themes-chk-themeScrollbars">{{Strings.USE_THEME_SCROLLBARS}}:</label>
+                <div class="controls">
+                    {{#settings.themeScrollbars}}
+                        <input type="checkbox" id="themes-chk-themeScrollbars" data-target="themeScrollbars" checked>
+                    {{/settings.themeScrollbars}}
+                    {{^settings.themeScrollbars}}
+                        <input type="checkbox" id="themes-chk-themeScrollbars" data-target="themeScrollbars">
+                    {{/settings.themeScrollbars}}
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="themes-input-fontSize">{{Strings.FONT_SIZE}}:</label>
+                <div class="controls">
+                    <input type="text" id="themes-input-fontSize" data-target="fontSize" value="{{settings.fontSize}}">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="themes-input-fontFamily">{{Strings.FONT_FAMILY}}:</label>
+                <div class="controls">
+                    <input type="text" id="themes-input-fontFamily" data-target="fontFamily" value="{{settings.fontFamily}}">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="dialog-button btn" data-button-id="cancel">{{Strings.CANCEL}}</button>
+        <button class="dialog-button btn primary" data-button-id="save">{{Strings.DONE}}</button>
+    </div>
+</div>
