@@ -1,0 +1,6 @@
+{
+  "name": "brackets-javascript-code-hints",
+  "dependencies": {
+    "tern": "0.21.0"
+  }
+}
