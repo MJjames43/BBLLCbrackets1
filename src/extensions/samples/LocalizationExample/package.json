@@ -1,0 +1,17 @@
+{
+    "name": "example.localization-example",
+    "title": "Brackets Extension Localization Example",
+    "description": "Example of how to localize your extension.",
+    
+    "homepage": "https://github.com/adobe/brackets/tree/master/src/extensions/samples/LocalizationExample",
+    
+    "version": "1.0.0",
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    
+    "i18n": [
+        "en", 
+        "fr" 
+    ]
+}
