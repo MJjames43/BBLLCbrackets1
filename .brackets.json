@@ -1,0 +1,25 @@
+{
+    "jslint.options": {
+        "vars": true,
+        "plusplus": true,
+        "devel": true,
+        "nomen": true,
+        "maxerr": 50,
+        "unparam": true,
+        "todo": true,
+        "es5": true
+    },
+    "defaultExtension": "js",
+    "path": {
+        "src/thirdparty/CodeMirror2/**/*.js": {
+            "spaceUnits": 2,
+            "linting.enabled": false
+        },
+        "src/thirdparty/globmatch.js": {
+            "spaceUnits": 2,
+            "linting.enabled": false
+        }
+    },
+    "spaceUnits": 4,
+    "useTabChar": false
+}
